@@ -6,24 +6,18 @@
     <title>Unity WebGL Player | 13Project(Unity2021.3.23)</title>
     <link rel="stylesheet" href="TemplateData/style.css">
    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            background-color: black;
+            overflow: hidden;
+            position: fixed;
+            touch-action: none;
+        }
+
       
-
-        canvas {
-            display: block;
-            width: 100vw;
-            height: 100vh;
-            background-color: transparent;
-        }
-
-        #video-canvas {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            z-index: 0;
-            pointer-events: none; /* 避免遮擋 Unity UI */
-        }
  #unity-canvas {
             position: fixed;
             top: 0;

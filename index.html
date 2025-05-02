@@ -17,23 +17,30 @@
             touch-action: none;
         }
 
-        canvas {
-            display: block;
-            width: 100vw;
-            height: 100vh;
-            background-color: transparent;
-        }
-
-        #video-canvas {
-            position: absolute;
+      
+ #unity-canvas {
+            position: fixed;
             top: 0;
             left: 0;
             width: 100vw;
             height: 100vh;
-            z-index: 0;
-            pointer-events: none; /* 避免遮擋 Unity UI */
+            background-color: transparent;
+            z-index: 1;
         }
 
+        .ctaDiv {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background: #fffa;
+            z-index: 99;
+        }
        
     </style>
 </head>

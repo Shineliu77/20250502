@@ -50,6 +50,16 @@
 		<imagetarget id='081' src='targets/08.jpg'></imagetarget>
 		<imagetarget id='091' src='targets/09.jpg'></imagetarget>
 		<imagetarget id='101' src='targets/10.jpg'></imagetarget>
+		<imagetarget id='QRCode01' src='targets/QRCode01.png'></imagetarget>
+		<imagetarget id='QRCode02' src='targets/QRCode02.png'></imagetarget>
+		<imagetarget id='QRCode03' src='targets/QRCode03.png'></imagetarget>
+		<imagetarget id='QRCode04' src='targets/QRCode04.png'></imagetarget>
+		<imagetarget id='QRCode05' src='targets/QRCode05.png'></imagetarget>
+		<imagetarget id='QRCode06' src='targets/QRCode06.png'></imagetarget>
+		<imagetarget id='QRCode07' src='targets/QRCode07.png'></imagetarget>
+		<imagetarget id='QRCode08' src='targets/QRCode08.png'></imagetarget>
+		<imagetarget id='QRCode09' src='targets/QRCode09.png'></imagetarget>
+		<imagetarget id='QRCode10' src='targets/QRCode10.png'></imagetarget>
 
     <video id="webcam-video" muted autoplay playsinline style="width:1px;position:absolute"></video>
     <canvas id="video-canvas" style="width:100%; height:100%; object-fit:cover; position:absolute"></canvas>
@@ -61,16 +71,13 @@
   <div id="screenshotDiv"
      style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
      background-color: rgba(0, 0, 0, 0.7); z-index: 9999; justify-content: center; align-items: center;">
-
     
     <div style="position: relative; background-color: white; padding: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
         <img id="screenshotImg" src="" alt="screenshot" style="max-width: 80vw; max-height: 80vh; display: block;">
         <button onclick="document.getElementById('screenshotDiv').style.display = 'none';" 
             style="position: absolute; top: 5px; right: 5px;">✖</button>
     </div>
-
 </div>
-
     <div id="confirmUrlDiv" style="display: none;" class="ctaDiv">
         <div style="position:relative; background-color:white; padding:10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.25); width: 80vw; display:flex; flex-direction: column; align-items: center;">
             <p id="confirmUrlText" style="text-align: center; width:80%; overflow: hidden; text-overflow: ellipsis;">Are you sure you want to visit url.com?</p>
@@ -85,7 +92,6 @@
     </div>
     <div id="unity-container" class="unity-mobile">
 <canvas id="unity-canvas" style="position:fixed; top:0; left:0; width: 100vw; height: 100vh; background: transparent;"></canvas>
-
         <div id="unity-loading-bar">
             <div id="unity-logo"></div>
             <div id="unity-progress-bar-empty">

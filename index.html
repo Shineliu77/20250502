@@ -72,12 +72,15 @@
      style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
      background-color: rgba(0, 0, 0, 0.7); z-index: 9999; justify-content: center; align-items: center;">
     
-    <div style="position: relative; background-color: white; padding: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
-        <img id="screenshotImg" src="" alt="screenshot" style="max-width: 80vw; max-height: 80vh; display: block;">
-        <button onclick="document.getElementById('screenshotDiv').style.display = 'none';" 
-            style="position: absolute; top: 5px; right: 5px;">✖</button>
+    <div style="position: relative; background-color: white; padding: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.3); display: flex; flex-direction: column; align-items: center;">
+        <p style="font-size: 16px; color: #444; margin-bottom: 8px;">📷 請長按圖片，儲存照片</p>
+        <img id="screenshotImg" src="" alt="screenshot"
+             style="max-width: 60vw; max-height: 60vh; display: block; border: 1px solid #ccc; border-radius: 6px;">
+        <button onclick="document.getElementById('screenshotDiv').style.display = 'none';"
+            style="position: absolute; top: 5px; right: 5px; background: transparent; border: none; font-size: 20px;">✖</button>
     </div>
 </div>
+
     <div id="confirmUrlDiv" style="display: none;" class="ctaDiv">
         <div style="position:relative; background-color:white; padding:10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.25); width: 80vw; display:flex; flex-direction: column; align-items: center;">
             <p id="confirmUrlText" style="text-align: center; width:80%; overflow: hidden; text-overflow: ellipsis;">Are you sure you want to visit url.com?</p>
